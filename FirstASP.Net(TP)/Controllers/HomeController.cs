@@ -13,6 +13,7 @@ namespace FirstASP.Net_TP_.Controllers
             return View();
         }
 
+        [OutputCache(Duration = 20)]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
